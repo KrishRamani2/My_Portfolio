@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from 'react';
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -5,6 +8,38 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    setIsDownloading(true);
+    
+    // Replace '/path/to/your/cv.pdf' with the actual path to your CV PDF file
+    // This path should be relative to your public directory
+    const pdfUrl = '/assets/resume/gvh (1).pdf';
+    
+    try {
+      const response = await fetch(pdfUrl);
+      if (!response.ok) throw new Error('Failed to fetch the file');
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'KrishRamani_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('Could not download the file. Please try again later.');
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -21,8 +56,14 @@ const Home = () => {
               I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span>Download CV</span>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
+                disabled={isDownloading}
+              >
+                <span>{isDownloading ? 'Downloading...' : 'Download CV'}</span>
                 <FiDownload className="text-xl" />
               </Button>
               <Social 

@@ -10,9 +10,15 @@ const socials=[
 const Social = ({containerStyles,iconStyles}) => {
   return (
     <div className={containerStyles}>
-      {socials.map((item,index)=>{
+      {/* {socials.map((item,index)=>{
         return (<Link key={index} href={item.path} className={iconStyles} >{item.icon}</Link>)
-      })}
+      })} */}
+      <Link href="https://github.com/KrishRamani2" className={iconStyles}>
+      <FaGithub />
+      </Link>
+      <Link href="https://www.linkedin.com/in/krishramani/" className={iconStyles}>
+      <FaLinkedinIn />
+      </Link>
     </div>
   )
 }
