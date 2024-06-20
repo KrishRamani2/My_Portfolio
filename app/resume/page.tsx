@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 const about={
   title:"About me",
-  description:"Enthusiastic and motivated beginner MERN Stack Developer eager to kickstart a career in web developement. Passionate about learning and appylibg new technologies to create innovative solutions.Seeking an entry-level position where I can contribute to projects while further developing my skills",
+  description:"Enthusiastic and motivated beginner MERN Stack Developer eager to kickstart a career in web developement. Passionate about learning and appyling new technologies to create innovative solutions.Seeking an entry-level position where I can contribute to projects while further developing my skills",
   info:[
     {
       fieldname:"Name",
@@ -283,7 +283,7 @@ const Resume = () => {
             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
               {about.info.map((item,index)=>{
                 return(
-                  <li key={index}className="flex items-center justify-center xl:justif">
+                  <li key={index} className="flex items-center justify-center xl:justif">
                     <span className="text-white/60">{item.fieldname}</span><span className="">{item.fieldValue}</span>
                   </li>
                 );

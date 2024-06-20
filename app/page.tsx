@@ -49,7 +49,7 @@ const Home = () => {
               Full Stack Developer
             </span>
             <h1 className="text-4xl font-bold leading-tight mb-4">
-              Hello I'm <br />
+              Hello I{"'"}m <br />
               <span className="text-accent">Krish Ramani</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
