@@ -15,7 +15,7 @@ const Home = () => {
     
     // Replace '/path/to/your/cv.pdf' with the actual path to your CV PDF file
     // This path should be relative to your public directory
-    const pdfUrl = '/assets/resume/gvh (1).pdf';
+    const pdfUrl = '/assets/resume/gvh (3).pdf';
     
     try {
       const response = await fetch(pdfUrl);
