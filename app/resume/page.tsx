@@ -53,6 +53,11 @@ const experience={
   position:'Coding Team Member',
   duration:'Apr 2024 - Present'
 },
+{
+  comapny:"Tata Group",
+  position:'Data Visualisation: Empowering Business with Effective Insights',
+  duration:'Jun 2024'
+},
 ]
 }
 const education={
