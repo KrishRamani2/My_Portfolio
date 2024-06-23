@@ -1,5 +1,5 @@
 "use client";
-import {FaHtml5,FaCss3,FaJava,FaJs,FaReact,FaNodeJs,FaGitAlt,FaPython} from 'react-icons/fa'
+import {FaHtml5,FaCss3,FaJava,FaJs,FaReact,FaNodeJs,FaGitAlt,FaPython,FaLinux} from 'react-icons/fa'
 import {SiTailwindcss,SiNextdotjs,SiTypescript,SiPostman,SiMongodb,SiMysql,SiDjango,SiRedux,SiFirebase,SiFlask,SiPostgresql,SiJquery} from 'react-icons/si'
 import { TbBrandReactNative,TbCircleLetterC } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
@@ -180,6 +180,10 @@ const skills = {
     {
       icon:<VscVscode />,
       name:"VsCode"
+    },
+    {
+      icon:<FaLinux />,
+      name:"Linux (Ubuntu)"
     }
   ]
 }

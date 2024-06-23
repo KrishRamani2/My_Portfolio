@@ -120,6 +120,8 @@ const Work = () => {
                     fill
                     className="object-cover"
                     alt="ecommerce"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    priority={index === 0}
                     />
                   </div>
                 </div>
