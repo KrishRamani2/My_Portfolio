@@ -55,7 +55,7 @@ const experience={
 },
 {
   comapny:"Tata Group",
-  position:'Data Visualisation: Empowering Business with Effective Insights',
+  position:'Data Visualisation',
   duration:'Jun 2024'
 },
 ]
