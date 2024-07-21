@@ -6,7 +6,7 @@ import { SiLeetcode } from "react-icons/si";
 const socials = [
   { icon: <FaGithub />, path: process.env.Github },
   { icon: <FaLinkedinIn />, path: process.env.LinkedIn },
-  { icon: <SiLeetcode />, path: process.env.LinkedIn },
+  { icon: <SiLeetcode />, path: process.env.Leetcode },
 ];
 
 interface SocialProps {
@@ -26,6 +26,9 @@ const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => (
     </Link>
     <Link href="https://www.linkedin.com/in/krishramani/" className={iconStyles}>
       <FaLinkedinIn />
+    </Link>
+    <Link href="https://leetcode.com/u/KrishRamani/" className={iconStyles}>
+      <SiLeetcode />
     </Link>
   </div>
 );
