@@ -27,7 +27,7 @@ const projects =[
     category:"ZENARA Mutli Vendor E-commerce (FullStack)",
     title:"Ecommerce Website",
     description:"Developed ZENARA e-commerce using MERN stack, ensuring high performance and seamless user experience.Crafted a visually appealing, responsive interface for ZENARA, enhancing the overall shopping experience.Implemented advanced product filtering and user-friendly Add to Cart functionality for efficient navigation.Designed and built an admin dashboard, empowering sellers with analytics and efficient management tools.",
-    stack:[{name:"Html5"},{name:"Css3"},{name:"JavaScript"},{name:"React"},{name:"NodeJs"},{name:"ExpressJs"},{name:"MongoDB"},],
+    stack:[{name:"MERN Stack"}],
     image:'/assets/work/Ecommerce.jpeg',
     live:"/",
     github:"https://github.com/KrishRamani2/Ecommerce_Website",

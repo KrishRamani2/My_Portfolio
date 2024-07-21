@@ -4,6 +4,7 @@ import {SiTailwindcss,SiNextdotjs,SiTypescript,SiPostman,SiMongodb,SiMysql,SiDja
 import { TbBrandReactNative,TbCircleLetterC } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { BiLogoCPlusPlus } from "react-icons/bi";
+import { IoLogoDocker } from "react-icons/io5";
 import {Tabs,TabsContent,TabsList,TabsTrigger} from "@/components/ui/tabs"
 import { Tooltip,TooltipContent,TooltipProvider, TooltipTrigger} from '@radix-ui/react-tooltip';
 import { ScrollArea } from '@radix-ui/react-scroll-area';
@@ -52,11 +53,6 @@ const experience={
   comapny:"DJS Antariksh",
   position:'Coding Team Member',
   duration:'Apr 2024 - Present'
-},
-{
-  comapny:"Tata Group",
-  position:'Data Visualisation',
-  duration:'Jun 2024'
 },
 ]
 }
@@ -189,6 +185,10 @@ const skills = {
     {
       icon:<FaLinux />,
       name:"Linux (Ubuntu)"
+    },
+    {
+      icon:<IoLogoDocker />,
+      name:"Docker",
     }
   ]
 }

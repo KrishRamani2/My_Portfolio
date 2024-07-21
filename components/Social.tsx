@@ -1,10 +1,12 @@
 import React from 'react';
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const socials = [
   { icon: <FaGithub />, path: process.env.Github },
   { icon: <FaLinkedinIn />, path: process.env.LinkedIn },
+  { icon: <SiLeetcode />, path: process.env.LinkedIn },
 ];
 
 interface SocialProps {
