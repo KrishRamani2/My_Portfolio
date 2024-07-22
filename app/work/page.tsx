@@ -42,16 +42,20 @@ const projects = [
   },
 ];
 
+interface ImagesLoadedState {
+  [key: number]: boolean;
+}
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
-  const [imagesLoaded, setImagesLoaded] = useState({});
+  const [imagesLoaded, setImagesLoaded] = useState<ImagesLoadedState>({});
 
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper: { activeIndex: number }) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
   };
 
-  const handleImageLoad = (index) => {
+  const handleImageLoad = (index: number) => {
     setImagesLoaded(prev => ({ ...prev, [index]: true }));
   };
 
