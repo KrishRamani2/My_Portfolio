@@ -181,7 +181,8 @@ const Resume = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
-                  <div className="w-[120px] h-[120px] flex items-center justify-center border border-gray-700 bg-[#1a1c22] text-3xl text-accent">
+                  <div className="w-[135px] h-[90px] flex items-center justify-center border
+                  border-gray-700 bg-[#1a1c22] text-5xl text-accent">
                     {skill.icon}
                   </div>
                 </TooltipTrigger>
