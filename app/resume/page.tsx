@@ -148,54 +148,55 @@ const Resume = () => {
               </div>
             </TabsContent>
             <TabsContent value="education" className='w-full'>
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
-                <ScrollArea className='h-[400px] overflow-y-scroll'>
-                  <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
-                    {education.items.map((item, index) => (
-                      <li
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 cursor-pointer"
-                        key={index}
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
-                        <div className="flex items-center gap-3 ">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.institution}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-            <TabsContent value="skills" className='w-full'>
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
-                <ScrollArea className='h-[400px] overflow-y-scroll'>
-                  <div className="flex flex-wrap gap-6 justify-center xl:justify-start">
-                    {skills.skillList.map((skill, index) => (
-                      <div className="flex flex-col items-center gap-2" key={index}>
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger>
-                              <div className="w-[60px] h-[60px] flex items-center justify-center rounded-full border border-gray-700 bg-[#1a1c22] text-2xl text-accent">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p>{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </div>
-                    ))}
+  <div className="flex flex-col gap-[30px] text-center xl:text-left">
+    <h3 className="text-4xl font-bold">{education.title}</h3>
+    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+    <ScrollArea className='h-[400px] overflow-y-scroll'>
+      <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
+        {education.items.map((item, index) => (
+          <li
+            className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center lg:items-start gap-2"
+            key={index}
+          >
+            <span className="text-accent">{item.duration}</span>
+            <div className="flex flex-col gap-1">
+              <h3 className="text-xl text-center lg:text-left">{item.degree}</h3>
+              <p className="text-white/60 text-center lg:text-left">{item.institution}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </ScrollArea>
+  </div>
+</TabsContent>
+
+<TabsContent value="skills" className='w-full'>
+  <div className="flex flex-col gap-[30px] text-center xl:text-left">
+    <h3 className="text-4xl font-bold">{skills.title}</h3>
+    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+    <div className="overflow-y-scroll h-[300px]">
+      <div className="flex flex-wrap gap-6 p-4">
+        {skills.skillList.map((skill, index) => (
+          <div className="flex flex-col items-center gap-2" key={index}>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="w-[120px] h-[120px] flex items-center justify-center border border-gray-700 bg-[#1a1c22] text-3xl text-accent">
+                    {skill.icon}
                   </div>
-                </ScrollArea>
-              </div>
-            </TabsContent>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{skill.name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</TabsContent>
+
             <TabsContent value="about" className='w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
