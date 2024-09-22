@@ -13,9 +13,7 @@ const Home = () => {
   const handleDownload = async () => {
     setIsDownloading(true);
     
-    // Replace '/path/to/your/cv.pdf' with the actual path to your CV PDF file
-    // This path should be relative to your public directory
-    const pdfUrl = '/assets/resume/gvh (3).pdf';
+    const pdfUrl = '/assets/resume/Krish_Ramani_Resume.pdf';
     
     try {
       const response = await fetch(pdfUrl);

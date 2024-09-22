@@ -2,11 +2,13 @@ import React from 'react';
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
 
 const socials = [
   { icon: <FaGithub />, path: process.env.Github },
   { icon: <FaLinkedinIn />, path: process.env.LinkedIn },
   { icon: <SiLeetcode />, path: process.env.Leetcode },
+  { icon: <SiCodeforces />, path: process.env.Leetcode },
 ];
 
 interface SocialProps {
@@ -29,6 +31,9 @@ const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => (
     </Link>
     <Link href="https://leetcode.com/u/KrishRamani/" className={iconStyles}>
       <SiLeetcode />
+    </Link>
+    <Link href="https://codeforces.com/profile/KrishRamani" className={iconStyles}>
+      <SiCodeforces />
     </Link>
   </div>
 );
