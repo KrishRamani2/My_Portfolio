@@ -53,7 +53,7 @@ const experience = {
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Education",
+  title: "My education",
   description: "My Education details:",
   items: [
     { institution: 'Dwarkadas J.Sanghvi College of Engineering', degree: 'BTech Electronics & Telecommunication Engineering (CGPA:8.25)', duration: "2023-2027", href: "/" },
@@ -94,7 +94,17 @@ const skills = {
     { icon: <IoLogoDocker />, name: "Docker" }
   ]
 };
-
+const achievements = {
+  icon: '/assets/resume/badge.svg',
+  title: 'My achievements.',
+  description: "Recognized in multiple hackathons for innovative solutions and advanced problem-solving skills.",
+  items: [
+    { venue: "DJSCE", position: 'MERN Stack Developer', hackname: 'Shortlisted In Internal Hackathon For SIH(2024)', duration: 'Aug 2024'},
+    { venue: "DJSCE", position: 'MERN Stack Developer',hackname: ' Shortlisted In DataHack 3.0', duration: 'October 2024', 
+      certificateUrl: 'https://drive.google.com/file/d/1fsoxAQwX0gG34IdJqf2rtwJH__pjugw3/view' },
+      { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',hackname: 'Shortlisted In MumbaiHack', duration: 'October 2024' },
+  ]
+};
 const Resume = () => {
   const [selectedCompany, setSelectedCompany] = useState<ExperienceItem | null>(null);
 
@@ -120,6 +130,7 @@ const Resume = () => {
             <TabsTrigger value='experience'>Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="achievements">Achievements</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
@@ -197,7 +208,30 @@ const Resume = () => {
     </div>
   </div>
 </TabsContent>
-
+<TabsContent value="achievements" className="w-full">
+  <div className="flex flex-col gap-[30px] text-center xl:text-left">
+    <h3 className="text-4xl font-bold">{achievements.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{achievements.description}</p>
+                <ScrollArea className='h-[400px] overflow-y-scroll'>
+                  <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
+                    {achievements.items.map((item, index) => (
+                      <li
+                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 cursor-pointer"
+                        key={index}
+                        onClick={() => handleCompanyClick(item)}
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-[260px] min-h-[90px] text-center lg:text-left">{item.hackname}</h3>
+                        <div className="flex items-center gap-3 ">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/60">{item.venue}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
             <TabsContent value="about" className='w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{about.title}</h3>

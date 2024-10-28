@@ -13,7 +13,7 @@ const Home = () => {
   const handleDownload = async () => {
     setIsDownloading(true);
     
-    const pdfUrl = '/assets/resume/Krish_Ramani_Resume.pdf';
+    const pdfUrl = '/assets/resume/Krish_Ramani.pdf';
     
     try {
       const response = await fetch(pdfUrl);
