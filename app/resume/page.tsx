@@ -14,8 +14,8 @@ import { motion } from 'framer-motion';
 
 // Define TypeScript interfaces
 interface ExperienceItem {
-  comapny: string;
-  position: string;
+  company?: string;
+  position?: string;
   duration: string;
   offerLetterUrl?: string;
   certificateUrl?: string;
@@ -41,13 +41,13 @@ const experience = {
   title: 'My experience.',
   description: "Crafting seamless digital experiences from front-end elegance to back-end robustness as a full stack developer.",
   items: [
-    { comapny: "Teknogeeks", position: 'Backend Developer Intern', duration: 'June 2024 - Aug 2024', 
+    { company: "Teknogeeks", position: 'Backend Developer Intern', duration: 'June 2024 - Aug 2024', 
       offerLetterUrl: 'https://drive.google.com/file/d/1j8LY1KiF6SBashAxLt8zLHL6NysmGDEv/view?usp=sharing', 
       certificateUrl: 'https://drive.google.com/file/d/1NfW97Mumo6JRxHVO-dYLg4IREo2TDDQA/view?usp=sharing',
       letterofappreciation:'https://drive.google.com/file/d/1iJZhHbhRD7tCyxA3bV-JzqJrpDtZ5bFX/view?usp=sharing',
       evaluationreport:'https://drive.google.com/file/d/1Bf3wxNXpUCDbuUCLCX05ahYtxbYhapNP/view?usp=sharing',
     },
-    { comapny: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Present' },
+    { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Present' },
   ]
 };
 
@@ -150,7 +150,7 @@ const Resume = () => {
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3 ">
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.comapny}</p>
+                          <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>
                     ))}
@@ -257,7 +257,7 @@ const Resume = () => {
               >
                 <IoClose />
               </button>
-              <h2 className="text-2xl font-bold mb-2">{selectedCompany.comapny}</h2>
+              <h2 className="text-2xl font-bold mb-2">{selectedCompany.company}</h2>
               <p><strong>Position:</strong> {selectedCompany.position}</p>
               <p><strong>Duration:</strong> {selectedCompany.duration}</p>
               {selectedCompany.offerLetterUrl && (
