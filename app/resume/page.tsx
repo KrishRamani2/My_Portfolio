@@ -102,7 +102,7 @@ const achievements = {
     { venue: "DJSCE", position: 'MERN Stack Developer', hackname: 'Shortlisted In Internal Hackathon For SIH(2024)', duration: 'Aug 2024'},
     { venue: "DJSCE", position: 'MERN Stack Developer',hackname: ' Shortlisted In DataHack 3.0', duration: 'October 2024', 
       certificateUrl: 'https://drive.google.com/file/d/1fsoxAQwX0gG34IdJqf2rtwJH__pjugw3/view' },
-      { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',hackname: 'Shortlisted In MumbaiHack', duration: 'October 2024' },
+      { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',hackname: 'Shortlisted In MumbaiHack',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024' },
   ]
 };
 const Resume = () => {
