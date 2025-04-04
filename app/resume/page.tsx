@@ -47,7 +47,10 @@ const experience = {
       letterofappreciation:'https://drive.google.com/file/d/1iJZhHbhRD7tCyxA3bV-JzqJrpDtZ5bFX/view?usp=sharing',
       evaluationreport:'https://drive.google.com/file/d/1Bf3wxNXpUCDbuUCLCX05ahYtxbYhapNP/view?usp=sharing',
     },
-    { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Present' },
+    { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Nov 2024' },
+    { company: "Sujal Softlink Infotech(OPC)Private Limited", position: 'Software Developer Intern', duration: 'Jan 2025 - Present', 
+      offerLetterUrl: 'https://drive.google.com/file/d/1Nc_Scvl3MzV7B0T4rGHoH-wd7aNM77Gt/view?usp=sharing',
+    },
   ]
 };
 
@@ -102,7 +105,11 @@ const achievements = {
     { venue: "DJSCE", position: 'MERN Stack Developer', hackname: 'Shortlisted In Internal Hackathon For SIH(2024)', duration: 'Aug 2024'},
     { venue: "DJSCE", position: 'MERN Stack Developer',hackname: ' Shortlisted In DataHack 3.0', duration: 'October 2024', 
       certificateUrl: 'https://drive.google.com/file/d/1fsoxAQwX0gG34IdJqf2rtwJH__pjugw3/view' },
-      { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',hackname: 'Shortlisted In MumbaiHack',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024' },
+     
+         { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',
+        hackname: 'Shortlisted In MumbaiHack',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024' },
+        { venue: "KJSCE(Vidyavihar)", position: 'MERN Stack Developer',
+          hackname: 'Shortlisted In AR/VR Hackathon',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'February 2025' },
   ]
 };
 const Resume = () => {
