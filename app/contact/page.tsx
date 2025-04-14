@@ -13,8 +13,8 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: 'Phone',
-    description: '(+91) 7977713644',
-    link: 'tel:+917977713644'
+    description: '(+91) 8451013020',
+    link: 'tel:+918451013020'
   },
   {
     icon: <FaEnvelope />,
@@ -25,8 +25,8 @@ const info = [
   {
     icon: <FaWhatsapp />,
     title: 'Whatsapp',
-    description: '(+91) 7977713644',
-    link: 'https://wa.me/917977713644'
+    description: '(+91) 8451013020',
+    link: 'https://wa.me/918451013020'
   },
   {
     icon: <FaMapMarkedAlt />,
