@@ -110,8 +110,11 @@ const achievements = {
         hackname: 'Shortlisted In MumbaiHack',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024' },
         { venue: "KJSCE(Vidyavihar)", position: 'MERN Stack Developer',
           hackname: 'Shortlisted In AR/VR Hackathon',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'February 2025' },
+          { venue: "DJSCE", position: 'MERN Stack Developer',
+            hackname: 'Shortlisted In Codeshastra XI',certificateUrl: 'https://drive.google.com/file/d/1ywV1wzcyEp2UpyipblkRosz69LeMXlBS/view?usp=sharing', duration: 'April 2025' },
+
   ]
-};
+}; 
 const Resume = () => {
   const [selectedCompany, setSelectedCompany] = useState<ExperienceItem | null>(null);
 
