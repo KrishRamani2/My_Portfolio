@@ -49,7 +49,7 @@ const experience = {
     },
     { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Nov 2024' },
     { company: "Sujal Softlink Infotech(OPC)Private Limited", position: 'Software Developer Intern', duration: 'Jan 2025 - Present', 
-      offerLetterUrl: 'https://drive.google.com/file/d/1Nc_Scvl3MzV7B0T4rGHoH-wd7aNM77Gt/view?usp=sharing',
+      offerLetterUrl: 'https://drive.google.com/file/d/1iUAeG4iL3sZljdmn8JF6af7uSUv0BqH6/view?usp=sharing',
     },
   ]
 };
