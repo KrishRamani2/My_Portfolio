@@ -22,6 +22,16 @@ const projects = [
   },
   {
     num: '02',
+    category: "Anomalyze AI",
+    title: "Auditing Chatbot",
+    description: "Developed a AI-Powered Sales Data Auditing Model.",
+    stack: [{ name:"Mern Stack" }],
+    image: '/assets/work/AnomalyzeAI.jpeg',
+    live: "https://drive.google.com/file/d/1-4OMPhiEUQBG6YJ9DV7grb0hDxg9BSHV/view",
+    github: "https://codeshastra-xi-dumb-js-aiml.vercel.app/",
+  },
+  {
+    num: '03',
     category: "ZENARA Mutli Vendor E-commerce (FullStack)",
     title: "Ecommerce Website",
     description: "Developed ZENARA e-commerce using MERN stack, ensuring high performance and seamless user experience.Crafted a visually appealing, responsive interface for ZENARA, enhancing the overall shopping experience.Implemented advanced product filtering and user-friendly Add to Cart functionality for efficient navigation.Designed and built an admin dashboard, empowering sellers with analytics and efficient management tools.",
@@ -31,7 +41,7 @@ const projects = [
     github: "https://github.com/KrishRamani2/Ecommerce_Website",
   },
   {
-    num: '03',
+    num: '04',
     category: "AuraReach (FullStack)",
     title: "AuraReach",
     description: "A React platform for content creators, offering niche insights, personalized recommendations, and growth strategies Enabled brand discovery of aligned creators using audience metrics,demographics, and tiered selections. Integrated Gemini API for an AI chatbot and Clerk for Google authentication to enhance user engagement and access.",
@@ -41,7 +51,7 @@ const projects = [
     github: "https://github.com/Dark-Knight499/Mumbai-Hack",
   },
   {
-    num: '04',
+    num: '05',
     category: "Smashify (Frontend)",
     title: "Smashify",
     description: "A Music PlatForm App",
@@ -51,7 +61,7 @@ const projects = [
     github: "https://github.com/KrishRamani2",
   },
   {
-    num: '05',
+    num: '06',
     category: "Voxify -AI APP — React Native app ",
     title: "Jarvo",
     description: "Voxify utilizes cutting-edge speech recognition technology to accurately transcribe spoken words into text in realtime.",
@@ -61,7 +71,7 @@ const projects = [
     github: "https://github.com/KrishRamani2/Voxify_AI_APP",
   },
   {
-    num: '06',
+    num: '07',
     category: "Plant Disease Detection Project (FullStack)",
     title: "फसलFIXER",
     description: "Integrated a third-party API to identify plant diseases and detect common agricultural issues from uploaded images.Designed and implemented RESTful APIs for image upload functionality, using Cloudinary for image storage and serving",
@@ -71,7 +81,7 @@ const projects = [
     github: "https://github.com/KrishRamani2/Plant_Disease_Detection/tree/main",
   },
   {
-    num: '07',
+    num: '08',
     category: "MagicStream:A Disney+Hotstar Clone (Frontend)",
     title: "MagicStream: A Disney+ Hotstar Clone",
     description: "MagicStream boasts an extensive collection of content spanning various genres, including blockbuster movies, pop-ular TV series, exclusive originals, and live sports broadcasts.",
@@ -82,7 +92,7 @@ const projects = [
   },
   
   {
-    num: '08',
+    num: '09',
     category: "TinDog (FrontEnd)",
     title: "TinDog",
     description: "Are you tired of swiping left on dating apps that just don't get your paw-some lifestyle? Look no further than TinDog, the app that brings dogs together based on their playful personalities and tail-wagging interests.",
