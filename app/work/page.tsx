@@ -17,7 +17,7 @@ const projects = [
     description: "Developed a TypeScript-based React Native chatbot app for farmers, featuring multilingual voice and text interactions, field data reporting, and AI-driven agricultural advice.",
     stack: [{ name: "React Native" }],
     image: '/assets/work/KrishiMitra2.jpeg',
-    live: "https://drive.google.com/file/d/1-4h4XsjZJx--MGIJuxK-95fHf7y_fZ2q/view?usp=sharing",
+    live: "https://youtu.be/xyX4avYSL_k",
     github: "https://github.com/KrishRamani2/KrishiMitra",
   },
   {
