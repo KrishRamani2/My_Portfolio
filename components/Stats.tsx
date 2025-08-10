@@ -15,7 +15,7 @@ const Stats = () => {
       text: "Projects Completed",
     },
     {
-      num: leetcodeSolved  || 303,
+      num: leetcodeSolved  || 357,
       text: "DSA Questions Solved",
     },
     {
