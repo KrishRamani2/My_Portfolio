@@ -48,7 +48,7 @@ const experience = {
       evaluationreport:'https://drive.google.com/file/d/1Bf3wxNXpUCDbuUCLCX05ahYtxbYhapNP/view?usp=sharing',
     },
     { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Nov 2024' },
-    { company: "Nexsys Technologies LLC,UAE", position: 'Full Stack Developer', duration: 'June 2025 - Aug 2025' },
+    { company: "Nexsys Technologies LLC,UAE", position: 'Full Stack Developer Intern', duration: 'June 2025 - Aug 2025' },
   ]
 };
 
