@@ -1,10 +1,10 @@
 "use client";
 import { useState } from 'react';
-import { FaHtml5, FaCss3, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython, FaLinux } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaLinux,FaJenkins } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiPostman, SiMongodb, SiMysql, SiDjango, SiRedux, SiFirebase, SiFlask, SiPostgresql, SiJquery } from 'react-icons/si';
-import { TbBrandReactNative, TbCircleLetterC } from 'react-icons/tb';
+import { TbBrandReactNative } from 'react-icons/tb';
 import { VscVscode } from 'react-icons/vsc';
-import { BiLogoCPlusPlus } from 'react-icons/bi';
+import { BiLogoSpringBoot  } from 'react-icons/bi';
 import { IoLogoDocker } from 'react-icons/io5';
 import { IoClose } from 'react-icons/io5'; // Import the close icon
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -66,32 +66,26 @@ const skills = {
   title: "My skills",
   description: "Proficient in designing and developing scalable full-stack applications utilizing modern technologies and frameworks.",
   skillList: [
-    { icon: <TbCircleLetterC />, name: "C" },
-    { icon: <BiLogoCPlusPlus />, name: "C++" },
     { icon: <FaJava />, name: "Java" },
-    { icon: <FaPython />, name: "Python" },
     { icon: <FaHtml5 />, name: "HTML5" },
     { icon: <FaCss3 />, name: "CSS3" },
     { icon: <FaJs />, name: "JavaScript" },
     { icon: <FaReact />, name: "React" },
-    { icon: <SiTypescript />, name: "TypeScript" },
-    { icon: <TbBrandReactNative />, name: "React Native" },
-    { icon: <SiFlask />, name: "Flask" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <SiJquery />, name: "jQuery" },
+    { icon: <BiLogoSpringBoot />, name: "Spring Boot" },
     { icon: <SiMongodb />, name: "MongoDB" },
     { icon: <SiMysql />, name: "MySQL" },
-    { icon: <SiDjango />, name: "Django" },
-    { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiFirebase />, name: "Firebase" },
+    { icon: <FaJenkins />, name: "Jenkins" },
+    { icon: <IoLogoDocker />, name: "Docker" },
     { icon: <FaGitAlt />, name: "GitLens" },
     { icon: <SiPostman />, name: "Postman" },
     { icon: <SiRedux />, name: "Redux" },
-    { icon: <VscVscode />, name: "VS Code" },
     { icon: <FaLinux />, name: "Linux (Ubuntu)" },
-    { icon: <IoLogoDocker />, name: "Docker" }
+    
   ]
 };
 const achievements = {
@@ -109,6 +103,15 @@ const achievements = {
           hackname: 'Shortlisted In AR/VR Hackathon',certificateUrl: 'https://drive.google.com/file/d/1iK17AXRDEWUX7NZnYaFKjw1ma9RrRHFN/view?usp=sharing', duration: 'February 2025' },
           { venue: "DJSCE", position: 'MERN Stack Developer',
             hackname: 'Shortlisted In Codeshastra XI',certificateUrl: 'https://drive.google.com/file/d/1ywV1wzcyEp2UpyipblkRosz69LeMXlBS/view?usp=sharing', duration: 'April 2025' },
+            { venue: "Agentic AI Day", position: 'MERN Stack Developer',
+            hackname: 'Agentic AI Day-Google',certificateUrl: 'https://drive.google.com/file/d/1Itld15ZBLTullo48BFnl2Rqn4qlFI2wK/view?usp=sharing', duration: 'Sept 2025' },
+            { venue: "Participation", position: 'MERN Stack Developer',
+            hackname: 'ISRO Bharatiya Antariksh Hackathon',certificateUrl: 'https://drive.google.com/file/d/1Zy60LbECNXjZIrJgmmDMHAMTgPHNYEKN/view?usp=sharing', duration: 'Sept 2025' },
+            { venue: "VPPCE", position: 'MERN Stack Developer',
+            hackname: 'IDEATHON',certificateUrl: 'https://drive.google.com/file/d/1NFASlnp9RUBz2hNR5s1sUefm-w6Ox0pP/view?usp=sharing', duration: 'Sept 2025' }
+
+
+            
 
   ]
 }; 
