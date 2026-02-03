@@ -1,10 +1,10 @@
 "use client";
 import { useState } from 'react';
-import { FaHtml5, FaCss3, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaLinux,FaJenkins } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaLinux, FaJenkins } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript, SiPostman, SiMongodb, SiMysql, SiDjango, SiRedux, SiFirebase, SiFlask, SiPostgresql, SiJquery } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { VscVscode } from 'react-icons/vsc';
-import { BiLogoSpringBoot  } from 'react-icons/bi';
+import { BiLogoSpringBoot } from 'react-icons/bi';
 import { IoLogoDocker } from 'react-icons/io5';
 import { IoClose } from 'react-icons/io5'; // Import the close icon
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -41,11 +41,12 @@ const experience = {
   title: 'My experience.',
   description: "Crafting seamless digital experiences from front-end elegance to back-end robustness as a full stack developer.",
   items: [
-    { company: "Teknogeeks", position: 'Backend Developer Intern', duration: 'June 2024 - Aug 2024', 
-      offerLetterUrl: 'https://drive.google.com/file/d/1j8LY1KiF6SBashAxLt8zLHL6NysmGDEv/view?usp=sharing', 
+    {
+      company: "Teknogeeks", position: 'Backend Developer Intern', duration: 'June 2024 - Aug 2024',
+      offerLetterUrl: 'https://drive.google.com/file/d/1j8LY1KiF6SBashAxLt8zLHL6NysmGDEv/view?usp=sharing',
       certificateUrl: 'https://drive.google.com/file/d/1NfW97Mumo6JRxHVO-dYLg4IREo2TDDQA/view?usp=sharing',
-      letterofappreciation:'https://drive.google.com/file/d/1iJZhHbhRD7tCyxA3bV-JzqJrpDtZ5bFX/view?usp=sharing',
-      evaluationreport:'https://drive.google.com/file/d/1Bf3wxNXpUCDbuUCLCX05ahYtxbYhapNP/view?usp=sharing',
+      letterofappreciation: 'https://drive.google.com/file/d/1iJZhHbhRD7tCyxA3bV-JzqJrpDtZ5bFX/view?usp=sharing',
+      evaluationreport: 'https://drive.google.com/file/d/1Bf3wxNXpUCDbuUCLCX05ahYtxbYhapNP/view?usp=sharing',
     },
     { company: "DJS Antariksh", position: 'Coding Team Member', duration: 'Apr 2024 - Nov 2024' },
     { company: "Nexsys Technologies LLC,UAE", position: 'Full Stack Developer Intern', duration: 'June 2025 - Aug 2025' },
@@ -86,7 +87,7 @@ const skills = {
     { icon: <SiPostman />, name: "Postman" },
     { icon: <SiRedux />, name: "Redux" },
     { icon: <FaLinux />, name: "Linux (Ubuntu)" },
-    
+
   ]
 };
 const achievements = {
@@ -94,28 +95,45 @@ const achievements = {
   title: 'My achievements.',
   description: "Recognized in multiple hackathons for innovative solutions and advanced problem-solving skills.",
   items: [
-    { venue: "DJSCE", position: 'MERN Stack Developer', hackname: 'Shortlisted In Internal Hackathon For SIH(2024)', duration: 'Aug 2024'},
-    { venue: "DJSCE", position: 'MERN Stack Developer',hackname: ' Shortlisted In DataHack 3.0', duration: 'October 2024', 
-      certificateUrl: 'https://drive.google.com/file/d/1fsoxAQwX0gG34IdJqf2rtwJH__pjugw3/view' },
-     
-         { venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',
-        hackname: 'Shortlisted In MumbaiHack',certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024' },
-        { venue: "KJSCE(Vidyavihar)", position: 'MERN Stack Developer',
-          hackname: 'Shortlisted In AR/VR Hackathon',certificateUrl: 'https://drive.google.com/file/d/1iK17AXRDEWUX7NZnYaFKjw1ma9RrRHFN/view?usp=sharing', duration: 'February 2025' },
-          { venue: "DJSCE", position: 'MERN Stack Developer',
-            hackname: 'Shortlisted In Codeshastra XI',certificateUrl: 'https://drive.google.com/file/d/1ywV1wzcyEp2UpyipblkRosz69LeMXlBS/view?usp=sharing', duration: 'April 2025' },
-            { venue: "Agentic AI Day", position: 'MERN Stack Developer',
-            hackname: 'Agentic AI Day-Google',certificateUrl: 'https://drive.google.com/file/d/1Itld15ZBLTullo48BFnl2Rqn4qlFI2wK/view?usp=sharing', duration: 'Sept 2025' },
-            { venue: "Participation", position: 'MERN Stack Developer',
-            hackname: 'ISRO Bharatiya Antariksh Hackathon',certificateUrl: 'https://drive.google.com/file/d/1Zy60LbECNXjZIrJgmmDMHAMTgPHNYEKN/view?usp=sharing', duration: 'Sept 2025' },
-            { venue: "VPPCE", position: 'MERN Stack Developer',
-            hackname: 'IDEATHON',certificateUrl: 'https://drive.google.com/file/d/1NFASlnp9RUBz2hNR5s1sUefm-w6Ox0pP/view?usp=sharing', duration: 'Sept 2025' }
-
-
-            
-
+    {
+      venue: "Usha Pravin Gandhi College of Arts, Commerce & Science", position: 'MERN Stack Developer',
+      hackname: 'Techvanza Hackathon(Winner)', certificateUrl: 'https://www.linkedin.com/posts/krishramani_techvanza-hackathonwin-firstplace-activity-7424085221295300608-hGOk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENUX8ABLH8dDaji9HBIAWIvA3Gkf_cp-4I', duration: 'Jan 2026'
+    },
+    {
+      venue: "IIT Jammu", position: 'Full Stack Developer',
+      hackname: 'SIH 2025(Winner)', certificateUrl: 'https://www.linkedin.com/posts/krishramani_smartindiahackathon-sih2025-hackathonjourney-activity-7405559074547027968-YJZc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENUX8ABLH8dDaji9HBIAWIvA3Gkf_cp-4I', duration: 'Dec 2025'
+    },
+    {
+      venue: "Agentic AI Day", position: 'MERN Stack Developer',
+      hackname: 'Agentic AI Day-Google', certificateUrl: 'https://drive.google.com/file/d/1Itld15ZBLTullo48BFnl2Rqn4qlFI2wK/view?usp=sharing', duration: 'Sept 2025'
+    },
+    {
+      venue: "Participation", position: 'MERN Stack Developer',
+      hackname: 'ISRO Bharatiya Antariksh Hackathon', certificateUrl: 'https://drive.google.com/file/d/1Zy60LbECNXjZIrJgmmDMHAMTgPHNYEKN/view?usp=sharing', duration: 'Sept 2025'
+    },
+    {
+      venue: "VPPCE", position: 'MERN Stack Developer',
+      hackname: 'IDEATHON', certificateUrl: 'https://drive.google.com/file/d/1NFASlnp9RUBz2hNR5s1sUefm-w6Ox0pP/view?usp=sharing', duration: 'Sept 2025'
+    },
+    {
+      venue: "DJSCE", position: 'MERN Stack Developer',
+      hackname: 'Shortlisted In Codeshastra XI', certificateUrl: 'https://drive.google.com/file/d/1ywV1wzcyEp2UpyipblkRosz69LeMXlBS/view?usp=sharing', duration: 'April 2025'
+    },
+    {
+      venue: "KJSCE(Vidyavihar)", position: 'MERN Stack Developer',
+      hackname: 'Shortlisted In AR/VR Hackathon', certificateUrl: 'https://drive.google.com/file/d/1iK17AXRDEWUX7NZnYaFKjw1ma9RrRHFN/view?usp=sharing', duration: 'February 2025'
+    },
+    {
+      venue: "DJSCE", position: 'MERN Stack Developer', hackname: ' Shortlisted In DataHack 3.0', duration: 'October 2024',
+      certificateUrl: 'https://drive.google.com/file/d/1fsoxAQwX0gG34IdJqf2rtwJH__pjugw3/view'
+    },
+    {
+      venue: "Atlas Skill Tech University", position: 'MERN Stack Developer',
+      hackname: 'Shortlisted In MumbaiHack', certificateUrl: 'https://drive.google.com/file/d/1neYVBRiMvccYhcy4mR9WwJbEuVW60v8N/view?usp=sharing', duration: 'October 2024'
+    },
+    { venue: "DJSCE", position: 'MERN Stack Developer', hackname: 'Shortlisted In Internal Hackathon For SIH(2024)', duration: 'Aug 2024' },
   ]
-}; 
+};
 const Resume = () => {
   const [selectedCompany, setSelectedCompany] = useState<ExperienceItem | null>(null);
 
@@ -170,58 +188,58 @@ const Resume = () => {
               </div>
             </TabsContent>
             <TabsContent value="education" className='w-full'>
-  <div className="flex flex-col gap-[30px] text-center xl:text-left">
-    <h3 className="text-4xl font-bold">{education.title}</h3>
-    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
-    <ScrollArea className='h-[400px] overflow-y-scroll'>
-      <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
-        {education.items.map((item, index) => (
-          <li
-            className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center lg:items-start gap-2"
-            key={index}
-          >
-            <span className="text-accent">{item.duration}</span>
-            <div className="flex flex-col gap-1">
-              <h3 className="text-xl text-center lg:text-left">{item.degree}</h3>
-              <p className="text-white/60 text-center lg:text-left">{item.institution}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </ScrollArea>
-  </div>
-</TabsContent>
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{education.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                <ScrollArea className='h-[400px] overflow-y-scroll'>
+                  <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
+                    {education.items.map((item, index) => (
+                      <li
+                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center lg:items-start gap-2"
+                        key={index}
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <div className="flex flex-col gap-1">
+                          <h3 className="text-xl text-center lg:text-left">{item.degree}</h3>
+                          <p className="text-white/60 text-center lg:text-left">{item.institution}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
 
-<TabsContent value="skills" className='w-full'>
-  <div className="flex flex-col gap-[30px] text-center xl:text-left">
-    <h3 className="text-4xl font-bold">{skills.title}</h3>
-    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
-    <div className="overflow-y-scroll h-[300px]">
-      <div className="flex flex-wrap gap-6 p-4">
-        {skills.skillList.map((skill, index) => (
-          <div className="flex flex-col items-center gap-2" key={index}>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <div className="w-[135px] h-[90px] flex items-center justify-center border
+            <TabsContent value="skills" className='w-full'>
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                <div className="overflow-y-scroll h-[300px]">
+                  <div className="flex flex-wrap gap-6 p-4">
+                    {skills.skillList.map((skill, index) => (
+                      <div className="flex flex-col items-center gap-2" key={index}>
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger>
+                              <div className="w-[135px] h-[90px] flex items-center justify-center border
                   border-gray-700 bg-[#1a1c22] text-5xl text-accent">
-                    {skill.icon}
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </div>
+                    ))}
                   </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{skill.name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</TabsContent>
-<TabsContent value="achievements" className="w-full">
-  <div className="flex flex-col gap-[30px] text-center xl:text-left">
-    <h3 className="text-4xl font-bold">{achievements.title}</h3>
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="achievements" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{achievements.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{achievements.description}</p>
                 <ScrollArea className='h-[400px] overflow-y-scroll'>
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
